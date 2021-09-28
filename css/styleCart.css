@@ -1,0 +1,566 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+.body
+{
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/bg.png);
+	background-repeat: repeat;
+	background-size: 50%;
+	background-attachment: fixed;
+	display: grid;
+	grid-template-rows: 110px 40px auto;
+}
+.headerPanel
+{
+	z-index: 10;
+	margin-top: 20px;
+	width: auto;
+	height: auto;
+	display: grid;
+	grid-template-columns: 30% 20% 10% 10% 15% 15%;
+	background: linear-gradient(#E56E2F, #E85100);
+}
+.logo
+{
+	z-index: 11;
+	width: 70%;
+	height: 100px;
+	margin-top: -14px;
+	margin-left: 80px;
+}
+.headerCatalog
+{
+	z-index: 10;
+	width: auto;
+	height: auto;
+	float: left;
+	background: #FFF8F4;
+	box-shadow: 0 7px 14px rgba(0,0,0,0.25);
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+.catalogButton
+{
+	width: 100%;
+	height: 100%;
+}
+.headerCatalog li
+{
+	float: left;
+	position: relative;
+	display: block;
+	background: #FFF8F4;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.headerCatalog li a
+{
+	display: block;
+	padding-top: 6px;
+	text-decoration: none;
+	color: #210C00;
+	font-size: 16pt;
+	font-family: fantasy;
+	letter-spacing: 4px;
+}
+.headerCatalog li:hover
+{
+	background: #FF9766;
+	text-decoration: none;
+}
+.headerCatalog ul
+{
+	width: 100%;
+	height: 40px;
+	margin-top: 8px;
+	background: #FFF8F4;
+	list-style: none;
+	position: absolute;
+	left: -9999px;
+	opacity: 0;
+}
+.headerCatalog ul li a
+{
+	display: block;
+	padding-top: 10px;
+	text-decoration: none;
+	color: #210C00;
+	font-size: 12pt;
+	font-weight: normal;
+	text-align: right;
+	margin-right: 20px;
+	letter-spacing: 0px;
+}
+.headerCatalog li:hover ul
+{
+	left: 0px;
+	opacity: 1;
+}
+.headerCatalog li:hover ul li:hover
+{
+	background: #FFD4BB;
+	text-decoration: none;
+}
+.contentBody
+{
+	z-index: 6;
+	display: grid;
+	width: 100%;
+	height: auto;
+	grid-template-rows: 100px auto 100px 200px;
+}
+.headContent
+{
+	z-index: 7;
+	display: grid;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#E85100, #E5B32F);
+	text-align: center;
+	box-shadow: 0 7px 14px rgba(0,0,0,0.25);
+}
+.headContent p
+{
+	margin-top: 20px;
+	font-size: 48px;
+	font-family: fantasy;
+	color: #FFF8F4;
+	text-shadow: 0 7px 14px rgba(0,0,0,0.25);
+}
+.content
+{
+	z-index: 6;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	text-decoration: none;
+}
+.content img
+{
+	z-index: 7;
+	display: block;
+	width: 50%;
+	height: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	text-decoration: none;
+}
+.content p
+{
+	z-index: 7;
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #210C00;
+	margin-top: 4px;
+	text-decoration: none;
+}
+.content p span
+{
+	z-index: 7;
+	display: block;
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	color: #210C00;
+	margin-top: 10px;
+	margin-left: 20px;
+	text-decoration: none;
+}
+.footer
+{
+	z-index: 12;
+	display: grid;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#E5B32F, #E85100);
+	box-shadow: 0 7px 14px rgba(0,0,0,0.25);
+	grid-template-columns: 30% 70%;
+}
+.endLogo
+{
+	width: 100%;
+	height: 100%;
+}
+.endLogo img
+{
+	display: block;
+	width: 160px;
+	height: 160px;
+	margin-left: auto;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.textFoot
+{
+	width: 100%;
+	height: 100%;
+}
+.textFoot p
+{
+	margin-left: 4px;
+	margin-top: 64px;
+	font-size: 12pt;
+	font-family: fantasy;
+	color: #210C00;
+}
+.inContent
+{
+	z-index: 7;
+	display: grid;
+	grid-template-rows: 65% 25% 10%;
+	width: 80%;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 64px;
+	margin-bottom: 64px;
+	background: linear-gradient(#FFF1E2, #FFE7DC);
+	box-shadow: 0 7px 14px rgba(0,0,0,0.25);
+}
+.search
+{
+	width: auto;
+	height: auto;
+}
+.searchButton
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 28px;
+	width: 50%;
+	height: 32px;
+	background: #FFF8F4;
+	border: 2px solid #210C00;
+	border-radius: 12px 12px 12px 12px;
+}
+.accauntButton
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 28px;
+	width: 50%;
+	height: 32px;
+	background: #FFF8F4;
+	border: 2px solid #210C00;
+	border-radius: 12px 12px 12px 12px;
+}
+.exitButton
+{
+	margin-left: auto;
+	margin-right: 1%;
+	margin-top: 8px;
+	width: 40%;
+	height: 24px;
+	background: #FFF8F4;
+	border: 2px solid #210C00;
+	border-radius: 4px 4px 4px 4px;
+}
+.accauntName
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	width: auto;
+	height: 24px;
+	background: #FFE800;
+	border: 2px solid #210C00;
+	border-radius: 4px 4px 4px 4px;
+}
+.accauntBasket
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 28px;
+	margin-left: 16px;
+	width: 75%;
+	height: 32px;
+	background: #FFF8F4;
+	border: 2px solid #210C00;
+	border-radius: 12px 12px 12px 12px;
+	display: grid;
+	grid-template-columns: 30% 80%;
+}
+.accauntBasket img
+{
+	width: 48px;
+	margin-top: 2px;
+}
+.accauntBasket p
+{
+	font-size: 14pt;
+	margin-top: 4px;
+	width: auto;
+	font-family: fantasy;
+	color: #210C00;
+}
+.accauntBasket:hover
+{
+	background: #FF9766;
+}
+.searchButton p
+{
+	text-align: center;
+	margin-top: 4px;
+	font-size: 14pt;
+	font-family: fantasy;
+	color: #210C00;
+}
+.accauntButton p
+{
+	text-align: center;
+	margin-top: 4px;
+	font-size: 14pt;
+	font-family: fantasy;
+	color: #210C00;
+}
+.exitButton p
+{
+	text-align: center;
+	margin-top: 1px;
+	font-size: 14pt;
+	font-family: fantasy;
+	color: #210C00;
+}
+.accauntName p
+{
+	text-align: center;
+	margin-top: 1px;
+	font-size: 14pt;
+	font-family: serif;
+	font-weight: bold;
+	color: #750000;
+}
+.search a
+{
+	text-decoration: none;
+}
+.searchButton:hover
+{
+	background: #FF9766;
+}
+.accauntButton:hover
+{
+	background: #FFDC00;
+}
+.exitButton:hover p
+{
+	color: #FFF8F4;
+}
+.exitButton:hover
+{
+	background: #C81B1B;
+}
+.confirmBuy
+{
+	width: 100%;
+	height: 100px;
+}
+.confirmButtons
+{
+	width: 60%;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(#E5B32F, #E85100);
+	box-shadow: 0 7px 14px rgba(0,0,0,0.25);
+	border: 2px solid #210C00;
+	border-radius: 12px 12px 12px 12px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.confirmButtons input
+{
+	width: 60%;
+	height: 42px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	background: #FFF8F4;
+	box-shadow: 0 7px 14px rgba(0,0,0,0.25);
+	border: 2px solid #210C00;
+	border-radius: 12px 12px 12px 12px;
+	font-size: 14pt;
+	font-family: fantasy;
+	color: #210C00;
+}
+.confirmButtons input:hover
+{
+ background: #FF9766;
+}
+div[style="margin: 0 20% !important; text-align:center !important;font-size:16px !important;font-family:arial !important;background-color:black !important;color:white !important"] {
+    position: absolute;
+    top: -200px;
+}
+.cbalink {
+    display: none;
+}
+@media screen and (max-width: 1372px)
+{
+	.body
+	{
+		height: auto;
+		grid-template-rows: 85px 40px auto;
+	}
+	.contentBody
+	{
+		grid-template-rows: 75px auto 100px 200px;
+	}
+	.confirmBuy
+	{
+		height: 75px;
+	}
+	.confirmButtons
+	{
+		height: 48px;
+	}
+	.confirmButtons input
+	{
+		margin-top: 6px;
+		height: 36px;
+	}
+	.headerPanel
+	{
+		margin-top: 10px;
+	}
+	.logo
+	{
+		height: 75px;
+		margin-top: -4px;
+	}
+	.search div
+	{
+		margin-top: 20px;
+		height: 28px;
+	}
+	.headerPanel p
+	{
+		font-size: 90%;
+		margin-top: 4px;
+	}
+	.headContent p
+	{
+		margin-top: 14px;
+		font-size: 28pt;
+	}
+	.headerCatalog li a
+	{
+		font-size: 14pt;
+	}
+	.headerCatalog li ul li a
+	{
+		font-size: 11pt;
+	}
+	.content
+	{
+		min-height: 500px;
+	}
+	.inContent
+	{
+		height: 500px;
+		grid-template-rows: 60% 40%;
+	}
+	.inContent p
+	{
+		font-size: 16pt;
+	}
+	.inContent p span
+	{
+		margin-right: 20px;
+		font-size: 12pt;
+	}
+	.inContent img
+	{
+		width: 40%;
+	}
+	.accauntBasket img
+	{
+		width: 36px;
+		margin-top: 4px;
+	}
+}
+@media screen and (max-width: 800px)
+{
+	.body
+	{
+		height: auto;
+		grid-template-rows: 85px 40px auto;
+	}
+	.contentBody
+	{
+		grid-template-rows: 75px auto 75px 200px;
+	}
+	.confirmBuy
+	{
+		height: 75px;
+	}
+	.confirmButtons
+	{
+		height: 42px;
+	}
+	.confirmButtons input
+	{
+		margin-top: 4px;
+		height: 32px;
+	}
+	.headerPanel p
+	{
+		font-size: 80%;
+		margin-top: 6px;
+	}
+	.headContent p
+	{
+		font-size: 26pt;
+	}
+	.headerCatalog li a
+	{
+		font-size: 14pt;
+	}
+	.headerCatalog li ul li a
+	{
+		font-size: 11pt;
+	}
+	.content
+	{
+		min-height: 500px;
+	}
+	.inContent
+	{
+		height: 400px;
+		grid-template-rows: 50% 50%;
+	}
+	.inContent p
+	{
+		font-size: 14pt;
+	}
+	.inContent p span
+	{
+		margin-right: 20px;
+		font-size: 11pt;
+	}
+	.inContent img
+	{
+		margin-top: 10px;
+		width: 30%;
+	}
+	.accauntBasket
+	{
+		display: block;
+		text-align: center;
+	}
+	.accauntBasket img
+	{
+		display: none;
+	}
+}
